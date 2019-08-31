@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "extends": ["tslint:recommended"],
   "rules": {
     "no-object-literal-type-assertion": false,
     "no-implicit-dependencies": false,
@@ -31,6 +31,6 @@
     "object-literal-sort-keys": false
   },
   "linterOptions": {
-    "exclude": ["src/vendors/**/*"]
+    "exclude": ["node_modules", "cache", "public", ".cache"]
   }
 }
