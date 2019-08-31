@@ -14,7 +14,7 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SssiteTitleQuery {
       site {
         siteMetadata {
           title
@@ -36,9 +36,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://github.com/sixtyseven">Bruce</a>
         </footer>
       </div>
     </>
