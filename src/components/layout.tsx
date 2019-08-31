@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 interface IProps {
   children: JSX.Element[] | JSX.Element
@@ -41,7 +41,7 @@ const Layout = ({ children }: IProps) => {
         <footer>
           © {new Date().getFullYear()}
           {` `}
-          <a href="https://github.com/sixtyseven">Bruce</a>
+          <a href="https://github.com/sixtyseven">Bruce Li</a>
         </footer>
       </div>
     </>
