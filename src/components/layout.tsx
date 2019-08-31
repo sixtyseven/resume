@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 import Header from "./header"
-import "./layout.scss"
+import "../assets/scss/custom_bootstrap.scss"
 
 interface IProps {
   children: JSX.Element[] | JSX.Element

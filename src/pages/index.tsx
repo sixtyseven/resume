@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "../components/image";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from "react"
+import Image from "../components/image"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +18,6 @@ const IndexPage = () => (
       and enjoy collaborating with others to produce good quality work.
     </p>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
