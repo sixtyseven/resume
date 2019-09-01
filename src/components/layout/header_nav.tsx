@@ -23,8 +23,8 @@ const Header = ({ siteTitle }: IProps) => (
         <Nav.Link as={Link} to="/">
           Home
         </Nav.Link>
-        <Nav.Link as={Link} to="/page-2">
-          page 2
+        <Nav.Link as={Link} to="/skills">
+          Skills
         </Nav.Link>
         <Nav.Link href="#pricing">Pricing</Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
