@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, NavDropdown } from "react-bootstrap"
-
-import linkedInIcon from "src/assets/images/glyphicons-social-18-linked-in.svg"
-import githubIcon from "src/assets/images/glyphicons-social-22-github.svg"
+import SVGI from "./linked_in.svg"
+// import SVGI from "src/assets/images/glyphicons-social-18-linked-in.svg"
+import styles from "./header_nav.module.scss"
 
 interface IProps {
   siteTitle: string
@@ -32,6 +32,9 @@ const Header = ({ siteTitle }: IProps) => (
             <NavDropdown.Item href="#action/3.4">Report a bug</NavDropdown.Item>
           </NavDropdown>
         </Nav>
+        <div className={`pr-md-5 ${styles.contactIcons}`}>
+          <SVGI />
+        </div>
       </Navbar.Collapse>
     </Navbar>
   </>

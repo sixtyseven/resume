@@ -5,6 +5,9 @@ h2 {
 .layout-header {
   background: rebeccapurple;
   padding: 1.25rem;
+  svg {
+    fill: #eee;
+  }
 }
 
 .layout-main {
