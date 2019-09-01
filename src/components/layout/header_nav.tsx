@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, NavDropdown } from "react-bootstrap"
-import SVGI from "./linked_in.svg"
-// import SVGI from "src/assets/images/glyphicons-social-18-linked-in.svg"
+// import SVGI from "./linked_in.svg"
+import SVGI from "src/assets/images/glyphicons-social-18-linked-in.svg"
 import styles from "./header_nav.module.scss"
 
 interface IProps {
