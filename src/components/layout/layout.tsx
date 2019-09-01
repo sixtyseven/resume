@@ -12,6 +12,15 @@ import Header from "./header_nav"
 import "../../assets/scss/custom_bootstrap.scss"
 import "./layout.scss"
 
+import {
+  Navbar,
+  Nav,
+  FormControl,
+  Form,
+  Button,
+  NavDropdown,
+} from "react-bootstrap"
+
 interface IProps {
   children: JSX.Element[] | JSX.Element
 }
