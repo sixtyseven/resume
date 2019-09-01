@@ -18,5 +18,4 @@
 
     For more gatsby APIs, head to [gatsby documentation](https://www.gatsbyjs.org/docs/). In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-1.  **todo**
-    1. sticky footer
+<!-- 1.  **todo** -->

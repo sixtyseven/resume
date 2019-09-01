@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import Layout from "../components/layout/layout"
-import SEO from "../components/common/seo"
+import Layout from "../../components/layout/layout"
+import SEO from "../../components/common/seo"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -20,12 +20,13 @@ const IndexPage = () => {
       <div className="row">
         <div className="col-md-8">
           <h2>
-            <code>Contact me via: </code>
+            <code>Reach me via: </code>
           </h2>
           <h4>
             <code>
+              LinkedIn:{` `}
               <a href={`${data.site.siteMetadata.linkedInUrl}`} target="_blank">
-                LinkedIn
+                {data.site.siteMetadata.linkedInUrl}
               </a>
             </code>
           </h4>

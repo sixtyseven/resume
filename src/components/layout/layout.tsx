@@ -9,8 +9,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 import HeaderNav from "./HeaderNav"
-import "../../assets/scss/custom_bootstrap.scss"
-import "./layout.scss"
+import "src/assets/scss/custom_bootstrap.scss"
 
 interface IProps {
   children: JSX.Element[] | JSX.Element
@@ -23,6 +22,7 @@ const Layout = ({ children }: IProps) => {
         siteMetadata {
           title
           linkedInUrl
+          gitRepoUrl
         }
       }
     }
@@ -36,6 +36,7 @@ const Layout = ({ children }: IProps) => {
             <HeaderNav
               siteTitle={data.site.siteMetadata.title}
               linkedInUrl={data.site.siteMetadata.linkedInUrl}
+              gitRepoUrl={data.site.siteMetadata.gitRepoUrl}
             />
           </div>
         </header>

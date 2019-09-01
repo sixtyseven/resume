@@ -5,6 +5,7 @@ module.exports = {
      Frontend Developer, Backend Developer, React, Graphql, Programmer`,
     author: `Bruce`,
     linkedInUrl: `https://www.linkedin.com/in/shouqiangli/`,
+    gitRepoUrl: `https://github.com/sixtyseven/resume`,
   },
   plugins: [
     `gatsby-plugin-root-import`,
