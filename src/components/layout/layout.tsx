@@ -8,18 +8,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
-import Header from "./header_nav"
+import HeaderNav from "./HeaderNav"
 import "../../assets/scss/custom_bootstrap.scss"
 import "./layout.scss"
-
-import {
-  Navbar,
-  Nav,
-  FormControl,
-  Form,
-  Button,
-  NavDropdown,
-} from "react-bootstrap"
 
 interface IProps {
   children: JSX.Element[] | JSX.Element
@@ -27,10 +18,11 @@ interface IProps {
 
 const Layout = ({ children }: IProps) => {
   const data = useStaticQuery(graphql`
-    query SssiteTitleQuery {
+    query SiteMetaDataQuery {
       site {
         siteMetadata {
           title
+          linkedInUrl
         }
       }
     }
@@ -38,14 +30,19 @@ const Layout = ({ children }: IProps) => {
 
   return (
     <>
-      <div className="layout-header">
-        <div className="container ">
-          <Header siteTitle={data.site.siteMetadata.title} />
-        </div>
+      <div className="page-wrapper">
+        <header className="layout-header">
+          <div className="container ">
+            <HeaderNav
+              siteTitle={data.site.siteMetadata.title}
+              linkedInUrl={data.site.siteMetadata.linkedInUrl}
+            />
+          </div>
+        </header>
+
+        <main className="container layout-main">{children}</main>
+        <div className="push"></div>
       </div>
-
-      <main className="container layout-main">{children}</main>
-
       <footer className="container layout-footer">
         <div className="row">
           <div className="col-md-4">

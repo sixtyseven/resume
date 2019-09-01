@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Bruce's Profile`,
-    description: `Full Stack Developer, Software Engineer, Frontend Developer, Backend Developer, React, Graphql`,
+    description: `Full Stack Developer, Software Engineer,
+     Frontend Developer, Backend Developer, React, Graphql, Programmer`,
     author: `Bruce`,
+    linkedInUrl: `https://www.linkedin.com/in/shouqiangli/`,
   },
   plugins: [
     `gatsby-plugin-root-import`,
@@ -27,7 +29,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/smiley_face.png`, // This path is relative to the root of the site.
+        // This path is relative to the root of the site.
+        icon: `src/assets/images/smiley_face.png`,
       },
     },
     {

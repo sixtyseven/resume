@@ -2,14 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, NavDropdown } from "react-bootstrap"
 // import SVGI from "./linked_in.svg"
-import SVGI from "src/assets/images/glyphicons-social-18-linked-in.svg"
-import styles from "./header_nav.module.scss"
+import LinkedInSVG from "src/assets/images/glyphicons-social-18-linked-in.svg"
+import styles from "./HeaderNav.module.scss"
 
 interface IProps {
   siteTitle: string
+  linkedInUrl: string
 }
 
-const Header = ({ siteTitle }: IProps) => (
+const HeaderNav = ({ siteTitle, linkedInUrl }: IProps) => (
   <>
     <Navbar collapseOnSelect variant="dark" expand="lg">
       <Navbar.Brand as={Link} to="/">
@@ -24,6 +25,9 @@ const Header = ({ siteTitle }: IProps) => (
           <Nav.Link as={Link} to="/skills">
             Skills
           </Nav.Link>
+          <Nav.Link as={Link} to="/use_me_guide">
+            Use me guide
+          </Nav.Link>
           <NavDropdown title="Contact" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to="/contact_me">
               Contact Me
@@ -33,11 +37,13 @@ const Header = ({ siteTitle }: IProps) => (
           </NavDropdown>
         </Nav>
         <div className={`pr-md-5 ${styles.contactIcons}`}>
-          <SVGI />
+          <a href={`${linkedInUrl}`} target="_blank">
+            <LinkedInSVG />
+          </a>
         </div>
       </Navbar.Collapse>
     </Navbar>
   </>
 )
 
-export default Header
+export default HeaderNav
