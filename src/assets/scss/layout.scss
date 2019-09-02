@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-div {
-  height: inherit;
-}
-
 .page-wrapper {
   min-height: 100%;
 
@@ -19,6 +15,8 @@ div {
   /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -3rem;
 }
+
+.layout-footer,
 .push {
   height: 3rem;
 }

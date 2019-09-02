@@ -8,6 +8,7 @@ module.exports = {
     gitRepoUrl: `https://github.com/sixtyseven/resume`,
   },
   plugins: [
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,

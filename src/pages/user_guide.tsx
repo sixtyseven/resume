@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/common/seo"
+import UserGuideMd from "../components/md/user_guide.mdx"
 
-const UseMeGuide = () => (
+const UserGuide = () => (
   <Layout>
-    <SEO title="Use Me Guide" />
-    <h1>Use Me Guide</h1>
-    <p>Welcome to Use Me Guide</p>
+    <SEO title="User Guide" />
+    <UserGuideMd />
   </Layout>
 )
 
-export default UseMeGuide
+export default UserGuide
