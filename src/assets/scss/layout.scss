@@ -42,3 +42,9 @@ div {
 .layout-footer {
   margin-top: 0.5rem;
 }
+
+.dropdown-menu {
+  .dropdown-item:not(:last-child) {
+    margin-bottom: 1px;
+  }
+}

@@ -41,8 +41,8 @@ const HeaderNav = ({
             <Nav.Link as={Link} to="/skills" activeClassName="active">
               Skills
             </Nav.Link>
-            <Nav.Link as={Link} to="/use_me_guide" activeClassName="active">
-              Use me guide
+            <Nav.Link as={Link} to="/user_guide" activeClassName="active">
+              User Guide
             </Nav.Link>
             <NavDropdown
               title="Contact"
@@ -56,7 +56,6 @@ const HeaderNav = ({
               >
                 Contact Me
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item
                 as={Link}
                 to="/contact/report_a_bug"
