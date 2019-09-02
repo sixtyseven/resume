@@ -2,6 +2,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+div {
+  height: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -10,13 +14,12 @@ body {
 
 .page-wrapper {
   min-height: 100%;
-
+  height: unset;
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -3rem;
 }
 
-.layout-footer,
 .push {
   height: 3rem;
 }
