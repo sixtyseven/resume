@@ -9,7 +9,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 
 import HeaderNav from "./HeaderNav"
-import "src/assets/scss/custom_bootstrap.scss"
+import "src/assets/scss/index.scss"
 import { Location, LocationContext } from "@reach/router"
 
 interface IProps {
@@ -35,7 +35,7 @@ const Layout = ({ children }: IProps) => {
         <header className="layout-header">
           <div className="container ">
             <Location>
-              { (locationProps: LocationContext) => (
+              {(locationProps: LocationContext) => (
                 <HeaderNav
                   siteTitle={data.site.siteMetadata.title}
                   linkedInUrl={data.site.siteMetadata.linkedInUrl}

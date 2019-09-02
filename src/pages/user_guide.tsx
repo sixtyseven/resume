@@ -6,7 +6,9 @@ import UserGuideMd from "../components/md/user_guide.mdx"
 const UserGuide = () => (
   <Layout>
     <SEO title="User Guide" />
-    <UserGuideMd />
+    <section className="section-user-guide">
+      <UserGuideMd />
+    </section>
   </Layout>
 )
 
