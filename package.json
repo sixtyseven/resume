@@ -58,7 +58,7 @@
     "check-types": "tsc",
     "prelint": "tslint --fix --project ./tsconfig.json",
     "lint": "tslint --project .",
-    "deploy": "gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
