@@ -1,6 +1,6 @@
 {
   "name": "bruce-profile",
-  "private": true,
+  "private": false,
   "description": "Full stack developer",
   "version": "0.1.0",
   "author": "Bruce Li<lsq991@gmail.com>",
@@ -58,11 +58,11 @@
     "check-types": "tsc",
     "prelint": "tslint --fix --project ./tsconfig.json",
     "lint": "tslint --project .",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && node ./tools/deploy_github.js",
     "deploy2": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sixtyseven/profile"
+    "url": "git@github.com:sixtyseven/resume.git"
   }
 }
