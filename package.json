@@ -1,9 +1,10 @@
 {
   "name": "bruce-profile",
-  "private": true,
+  "private": false,
   "description": "Full stack developer",
   "version": "0.1.0",
   "author": "Bruce Li<lsq991@gmail.com>",
+  "homepage":"https://sixtyseven.github.io",
   "dependencies": {
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
@@ -31,6 +32,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-helmet": "^5.0.9",
     "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "tslint": "^5.19.0",
     "tslint-config-prettier": "^1.18.0",
@@ -55,10 +57,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "check-types": "tsc",
     "prelint": "tslint --fix --project ./tsconfig.json",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sixtyseven/todo"
+    "url": "git@github.com:sixtyseven/resume.git"
   }
 }
