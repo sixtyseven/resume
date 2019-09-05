@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/components/layout/HeaderNav.module.scss"],"names":["module","exports","contactIcons"],"mappings":"6EACAA,EAAAC,QAAA,CAAkBC,aAAA","file":"styles-b0a78714a077b4b6f8c8.js","sourcesContent":["// extracted by mini-css-extract-plugin\nmodule.exports = {\"contactIcons\":\"HeaderNav-module--contactIcons--2L71W\"};"],"sourceRoot":""}
