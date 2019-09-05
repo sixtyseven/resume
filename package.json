@@ -59,7 +59,8 @@
     "prelint": "tslint --fix --project ./tsconfig.json",
     "lint": "tslint --project .",
     "deploy": "gatsby build && node ./tools/deploy_github.js",
-    "deploy2": "gh-pages -d public"
+    "deploy2": "gh-pages -d public",
+    "deploy3": "gatsby build && gh-pages -d public"
   },
   "repository": {
     "type": "git",
