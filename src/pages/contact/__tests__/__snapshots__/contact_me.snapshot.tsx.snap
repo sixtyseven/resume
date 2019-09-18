@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactMe renders correctly 1`] = `
+<div
+  data-testid="layout"
+>
+  <div
+    data-testid="seo"
+  />
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-8"
+    >
+      <h2>
+        <code>
+          Reach me via: 
+        </code>
+      </h2>
+      <h4>
+        <code>
+          LinkedIn:
+           
+          <a
+            href="linkedInUrl"
+            target="_blank"
+          >
+            linkedInUrl
+          </a>
+        </code>
+      </h4>
+      <h4>
+        <code>
+          or Email: lsq991 at gmail dot com
+        </code>
+      </h4>
+    </div>
+  </div>
+</div>
+`;

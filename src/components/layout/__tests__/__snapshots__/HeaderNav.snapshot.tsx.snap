@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderNav renders correctly 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-dark"
+>
+  <a
+    className="navbar-brand"
+    href="/"
+  >
+    Default Starter
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="mr-auto navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+      >
+        Home
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/skills"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+      >
+        Skills
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key={null}
+        disabled={false}
+        href="/user_guide"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+      >
+        User Guide
+      </a>
+      <div
+        className="active dropdown nav-item"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle nav-link"
+          data-rb-event-key={null}
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          Contact
+        </a>
+        <div
+          aria-labelledby={null}
+          className="dropdown-menu"
+        >
+          <a
+            className="dropdown-item"
+            disabled={false}
+            href="/contact/contact_me"
+            onClick={[Function]}
+          >
+            Contact Me
+          </a>
+          <a
+            className="dropdown-item"
+            disabled={false}
+            href="/contact/report_a_bug"
+            onClick={[Function]}
+          >
+            Report a bug
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="pr-md-5 contactIcons"
+    >
+      <a
+        href="gitRepoUrl"
+        target="_blank"
+      >
+        <test-file-stub />
+      </a>
+      <a
+        href="linkedInUrl"
+        target="_blank"
+      >
+        <test-file-stub />
+      </a>
+    </div>
+  </div>
+</nav>
+`;
