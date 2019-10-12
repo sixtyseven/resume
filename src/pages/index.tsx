@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "src/components/home/image"
+import ProfileImage from "src/components/home/ProfileImage"
 import Layout from "src/components/layout/Layout"
 import SEO from "src/components/common/seo"
 
@@ -9,7 +9,7 @@ const IndexPage = () => (
     <div className="row home-page">
       <div className="col-md-4">
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
+          <ProfileImage />
         </div>
       </div>
       <div className="col-md-8">

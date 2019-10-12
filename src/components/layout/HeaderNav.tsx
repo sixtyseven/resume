@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Navbar, Nav, NavDropdown } from "react-bootstrap"
-import LinkedInSVG from "src/assets/images/glyphicons-social-18-linked-in.svg"
-import GithubSVG from "src/assets/images/glyphicons-social-22-github.svg"
+import LinkedInSVG from "src/assets/images/social_icons/glyphicons-social-18-linked-in.svg"
+import GithubSVG from "src/assets/images/social_icons/glyphicons-social-22-github.svg"
 import styles from "./HeaderNav.module.scss"
 import { WindowLocation } from "@reach/router"
 

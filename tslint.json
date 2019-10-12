@@ -1,13 +1,21 @@
 {
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react-hooks"
+  ],
   "rules": {
     "no-object-literal-type-assertion": false,
     "no-implicit-dependencies": false,
     "object-literal-sort-keys": false,
     "no-console": false,
     "no-submodule-imports": false,
-    "variable-name": [false],
-    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "variable-name": [
+      false
+    ],
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks"
+    ],
     "trailing-comma": [
       true,
       {
@@ -16,7 +24,10 @@
         "esSpecCompliant": true
       }
     ],
-    "no-empty": [true, "allow-empty-functions"],
+    "no-empty": [
+      true,
+      "allow-empty-functions"
+    ],
     "no-var-requires": false,
     "jsdoc-format": false,
     "no-reference": false,
@@ -25,12 +36,18 @@
     "no-namespace": false,
     "unified-signatures": false,
     "max-classes-per-file": false,
-    "prefer-const": false
+    "prefer-const": false,
+    "react-hooks-nesting": "error"
   },
   "jsRules": {
     "object-literal-sort-keys": false
   },
   "linterOptions": {
-    "exclude": ["node_modules", "cache", "public", ".cache"]
+    "exclude": [
+      "node_modules",
+      "cache",
+      "public",
+      ".cache"
+    ]
   }
 }

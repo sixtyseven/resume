@@ -9,6 +9,14 @@ module.exports = {
     gitRepoUrl: `https://github.com/sixtyseven/resume`,
   },
   plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
     `gatsby-plugin-mdx`,
     `gatsby-plugin-root-import`,
     `gatsby-plugin-sass`,
@@ -33,7 +41,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // This path is relative to the root of the site.
-        icon: `src/assets/images/smiley_face.png`,
+        icon: `src/assets/images/haircut.jpg`,
       },
     },
     {
