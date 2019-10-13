@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{266:function(e,a,t){"use strict";t.r(a);var n=t(0),l=t.n(n),c=t(263),r=t(262);a.default=function(){return l.a.createElement(c.a,null,l.a.createElement(r.a,{title:"Home"}),l.a.createElement("div",{className:"row"},l.a.createElement("div",{className:"col-md-8"},l.a.createElement("h2",null,l.a.createElement("code",null,"Report a bug ")),l.a.createElement("div",null,"form todo"))))}}}]);
+//# sourceMappingURL=component---src-pages-contact-report-a-bug-tsx-e89d4c84a8c9888fe206.js.map
