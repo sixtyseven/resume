@@ -14,7 +14,7 @@ const IndexPage = () => (
       </div>
       <div className="col-md-8">
         <h2>
-          <code>Hi people</code>
+          <code>Hi there, </code>
         </h2>
         <p>
           <code>Welcome to my profile site.</code>
@@ -24,12 +24,8 @@ const IndexPage = () => (
         </p>
         <p>
           <code>
-            With many years of working experience with both frontend and backend
-            web development, I am particularly interested Modular programming,
-            Functional programming, lean programming, scalability, OOP, SQL,
-            NOSQL, and Unit testing etc. I have a good eye for detail. I am also
-            a a problem solver, a good team player and enjoying collaborating
-            with others to produce good quality work.
+            Cutting edge technology is cool, but I am also interested in fundamental stuffs, ie: Math, Data Structures,
+            Algorithms, OOP, SQL etc.
           </code>
         </p>
       </div>
