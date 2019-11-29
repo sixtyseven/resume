@@ -45,7 +45,9 @@
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.10.2",
+    "rimraf": "^3.0.0",
     "ts-jest": "^24.1.0",
+    "copyfiles": "^2.1.1",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
@@ -70,7 +72,7 @@
     "check-types": "tsc",
     "prelint": "tslint --fix --project ./tsconfig.json",
     "lint": "tslint --project .",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "npm run build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
