@@ -68,8 +68,15 @@ const Layout = ({ children }: IProps) => {
           <div className="col-md-8">
             <em>
               <Link
+                activeClassName="active"
                 sx={{
                   color: `muted`,
+                  "&.active": {
+                    color: "heading",
+                  },
+                  "&:hover": {
+                    color: "heading",
+                  },
                 }}
                 to="/contact/report_a_bug"
               >
