@@ -30,24 +30,24 @@ exports[`Index renders correctly 1`] = `
       className="col-md-8"
     >
       <h2>
-        <code>
+        <Styled.code>
           Hi people
-        </code>
+        </Styled.code>
       </h2>
       <p>
-        <code>
+        <Styled.code>
           Welcome to my profile site.
-        </code>
+        </Styled.code>
       </p>
       <p>
-        <code>
+        <Styled.code>
           I am a full stack developer.
-        </code>
+        </Styled.code>
       </p>
       <p>
-        <code>
+        <Styled.code>
           With many years of working experience with both frontend and backend web development, I am particularly interested Modular programming, Functional programming, lean programming, scalability, OOP, SQL, NOSQL, and Unit testing etc. I have a good eye for detail. I am also a a problem solver, a good team player and enjoying collaborating with others to produce good quality work.
-        </code>
+        </Styled.code>
       </p>
     </div>
   </div>

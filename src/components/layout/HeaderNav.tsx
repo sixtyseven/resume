@@ -5,6 +5,10 @@ import LinkedInSVG from "src/assets/images/social_icons/glyphicons-social-18-lin
 import GithubSVG from "src/assets/images/social_icons/glyphicons-social-22-github.svg"
 import styles from "./HeaderNav.module.scss"
 import { WindowLocation } from "@reach/router"
+import { useColorMode } from "theme-ui"
+import Switch from "src/components/common/Switch"
+import sun from "src/assets/images/day_night_theme/sun.png"
+import moon from "src/assets/images/day_night_theme/moon.png"
 
 interface IProps {
   siteTitle: string
@@ -12,6 +16,28 @@ interface IProps {
   gitRepoUrl: string
   location: WindowLocation
 }
+
+const checkedIcon = (
+  <img
+    alt="moon indicating dark mode"
+    src={moon}
+    width="16"
+    height="16"
+    role="presentation"
+    className={styles.dayNightThemeIcon}
+  />
+)
+
+const uncheckedIcon = (
+  <img
+    alt="sun indicating light mode"
+    src={sun}
+    width="16"
+    height="16"
+    role="presentation"
+    className={styles.dayNightThemeIcon}
+  />
+)
 
 const HeaderNav = ({
   siteTitle,
@@ -25,6 +51,12 @@ const HeaderNav = ({
     ) !== -1
       ? "active"
       : ""
+
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
+  const toggleColorMode = (e: any) => {
+    setColorMode(isDark ? `light` : `dark`)
+  }
 
   return (
     <>
@@ -74,6 +106,14 @@ const HeaderNav = ({
               <LinkedInSVG />
             </a>
           </div>
+
+          <Switch
+            aria-label="Toggle dark mode"
+            checkedIcon={checkedIcon}
+            uncheckedIcon={uncheckedIcon}
+            checked={isDark}
+            onChange={toggleColorMode}
+          />
         </Navbar.Collapse>
       </Navbar>
     </>

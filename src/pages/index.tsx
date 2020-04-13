@@ -2,6 +2,7 @@ import React from "react"
 import ProfileImage from "src/components/home/ProfileImage"
 import Layout from "src/components/layout/Layout"
 import SEO from "src/components/common/seo"
+import { Styled } from "theme-ui"
 
 const IndexPage = () => (
   <Layout>
@@ -14,19 +15,20 @@ const IndexPage = () => (
       </div>
       <div className="col-md-8">
         <h2>
-          <code>Hi there, </code>
+          <Styled.code>Hi there, </Styled.code>
         </h2>
         <p>
-          <code>Welcome to my profile site.</code>
+          <Styled.code>Welcome to my profile site.</Styled.code>
         </p>
         <p>
-          <code>I am a full stack developer.</code>
+          <Styled.code>I am a full stack developer.</Styled.code>
         </p>
         <p>
-          <code>
-            Cutting edge technology is cool, but I am also interested in fundamental stuffs, ie: Math, Data Structures,
-            Algorithms, OOP, SQL etc.
-          </code>
+          <Styled.code>
+            Cutting edge technology is cool, but I am also interested in
+            fundamental stuffs, ie: Math, Data Structures, Algorithms, OOP, SQL
+            etc.
+          </Styled.code>
         </p>
       </div>
     </div>

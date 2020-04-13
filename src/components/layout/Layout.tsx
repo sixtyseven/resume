@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -6,11 +8,11 @@
  */
 
 import { graphql, useStaticQuery, Link } from "gatsby"
-import React from "react"
 
 import HeaderNav from "./HeaderNav"
 import "src/assets/scss/index.scss"
 import { Location, LocationContext } from "@reach/router"
+import { Styled } from "theme-ui"
 
 interface IProps {
   children: JSX.Element[] | JSX.Element
@@ -30,10 +32,10 @@ const Layout = ({ children }: IProps) => {
   `)
 
   return (
-    <>
-      <div className="page-wrapper">
+    <Styled.root>
+      <Styled.div className="page-wrapper">
         <header className="layout-header">
-          <div className="container ">
+          <Styled.div className="container">
             <Location>
               {(locationProps: LocationContext) => (
                 <HeaderNav
@@ -44,15 +46,20 @@ const Layout = ({ children }: IProps) => {
                 />
               )}
             </Location>
-          </div>
+          </Styled.div>
         </header>
 
         <main className="container layout-main">{children}</main>
         <div className="push"></div>
-      </div>
+      </Styled.div>
       <footer className="container layout-footer">
         <div className="row">
-          <div className="col-md-4">
+          <div
+            className="col-md-4"
+            sx={{
+              color: `muted`,
+            }}
+          >
             © {new Date().getFullYear()}
             {` `}
             Bruce Li
@@ -60,12 +67,19 @@ const Layout = ({ children }: IProps) => {
           </div>
           <div className="col-md-8">
             <em>
-              <Link to="/contact/report_a_bug">Report a bug</Link>
+              <Link
+                sx={{
+                  color: `muted`,
+                }}
+                to="/contact/report_a_bug"
+              >
+                Report a bug
+              </Link>
             </em>
           </div>
         </div>
       </footer>
-    </>
+    </Styled.root>
   )
 }
 

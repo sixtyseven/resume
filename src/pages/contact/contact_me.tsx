@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "src/components/layout/Layout"
 import SEO from "src/components/common/seo"
+import { Styled } from "theme-ui"
 
 const IndexPage = () => {
   return (
@@ -9,19 +10,19 @@ const IndexPage = () => {
       <div className="row">
         <div className="col-12 col-md-8">
           <h2>
-            <code>Contact Me</code>
+            <Styled.code>Contact Me</Styled.code>
           </h2>
           <br />
           <div>
-            <form
-              action="https://formspree.io/moqqobrb"
-              method="POST"
-            >
+            <form action="https://formspree.io/moqqobrb" method="POST">
               <div className="form-group">
                 <label htmlFor="contact-form-name">
-                  <code>Your Name <span className="text-danger">*</span></code>
+                  <Styled.code>
+                    Your Name <span className="text-danger">*</span>
+                  </Styled.code>
                 </label>
-                <input type="text"
+                <input
+                  type="text"
                   name="name"
                   id="contact-form-name"
                   className="form-control"
@@ -30,9 +31,10 @@ const IndexPage = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="contact-form-email">
-                  <code>Your Email Address</code>
+                  <Styled.code>Your Email Address</Styled.code>
                 </label>
-                <input type="email"
+                <input
+                  type="email"
                   name="email"
                   id="contact-form-email"
                   className="form-control"
@@ -40,9 +42,12 @@ const IndexPage = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="contact-form-message">
-                  <code>Message <span className="text-danger">*</span></code>
+                  <Styled.code>
+                    Message <span className="text-danger">*</span>
+                  </Styled.code>
                 </label>
-                <textarea name="message"
+                <textarea
+                  name="message"
                   rows={6}
                   id="contact-form-message"
                   className="form-control"
@@ -50,9 +55,7 @@ const IndexPage = () => {
                 />
               </div>
               <div className="form-group">
-                <button
-                  type="submit"
-                  className="form-control">
+                <button type="submit" className="form-control">
                   Submit
                 </button>
               </div>
@@ -60,9 +63,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-
-      </div>
+      <div className="row"></div>
     </Layout>
   )
 }

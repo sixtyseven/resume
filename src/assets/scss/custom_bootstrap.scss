@@ -24,8 +24,6 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/utilities";
 
-
-
 //  @import "functions";
 //  @import "variables";
 //  @import "mixins";
@@ -63,3 +61,8 @@ $theme-colors: (
 //  @import "spinners";
 //  @import "utilities";
 //  @import "print";
+
+.layout-header .container .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}

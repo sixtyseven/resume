@@ -14,12 +14,12 @@ exports[`ContactMe renders correctly 1`] = `
       className="col-md-8"
     >
       <h2>
-        <code>
+        <Styled.code>
           Reach me via: 
-        </code>
+        </Styled.code>
       </h2>
       <h4>
-        <code>
+        <Styled.code>
           LinkedIn:
            
           <a
@@ -28,12 +28,12 @@ exports[`ContactMe renders correctly 1`] = `
           >
             linkedInUrl
           </a>
-        </code>
+        </Styled.code>
       </h4>
       <h4>
-        <code>
+        <Styled.code>
           or Email: lsq991 at gmail dot com
-        </code>
+        </Styled.code>
       </h4>
     </div>
   </div>
