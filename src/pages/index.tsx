@@ -26,7 +26,7 @@ const IndexPage = () => (
         <p>
           <Styled.code>
             Cutting edge technology is cool, but I am also interested in
-            fundamental stuffs, ie: Math, Data Structures, Algorithms, OOP, SQL
+            fundamental stuff, ie: Math, Data Structures, Algorithms, OOP, SQL
             etc.
           </Styled.code>
         </p>
