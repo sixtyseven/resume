@@ -1,239 +1,170 @@
 [
-    {
-        "label": "HTML5",
-        "backgroundImage": "html5.png",
-        "description": "Hypertext Markup Language",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "CSS3",
-        "description": "Cascading Style Sheets",
-        "backgroundImage": "css3.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "Javascript",
-        "description": "A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.",
-        "backgroundImage": "js.png",
-        "tags": [
-            "frontend",
-            "language",
-            "backend"
-        ]
-    },
-    {
-        "label": "Bootstrap",
-        "description": "Open source CSS toolkit",
-        "backgroundImage": "bootstrap.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "Docker",
-        "description": "Isolated development environment and help ship to production",
-        "backgroundImage": "docker.jpeg",
-        "tags": [
-            "devops"
-        ]
-    },
-    {
-        "label": "NodeJs",
-        "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
-        "backgroundImage": "nodejs.png",
-        "tags": [
-            "backend",
-            "language"
-        ]
-    },
-    {
-        "label": "Functional Programming",
-        "description": "Treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.",
-        "backgroundImage": "",
-        "tags": [
-            "others"
-        ]
-    },
-    {
-        "label": "PHP",
-        "description": "A popular general-purpose scripting language for web development.",
-        "backgroundImage": "php.png",
-        "tags": [
-            "backend",
-            "language"
-        ]
-    },
-    {
-        "label": "i18n",
-        "description": "developing products in such a way that they can be localized for languages and cultures easily.",
-        "backgroundImage": "i18n.png",
-        "tags": [
-            "others"
-        ]
-    },
-    {
-        "label": "AWS",
-        "description": "Amazon Web Services",
-        "backgroundImage": "aws.png",
-        "tags": [
-            "devops"
-        ]
-    },
-    {
-        "label": "Data Structures",
-        "description": "Containers, dictionaries, priority queues, etc.",
-        "backgroundImage": "data_structure.png",
-        "tags": [
-            "fundamental"
-        ]
-    },
-    {
-        "label": "Algorithms",
-        "description": "Sort, search, graph, string, etc.",
-        "backgroundImage": "algorithm.png",
-        "tags": [
-            "fundamental"
-        ]
-    },
-    {
-        "label": "React",
-        "description": "A JavaScript library for building user interfaces.",
-        "backgroundImage": "react.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "Webpack",
-        "description": "A static module bundler for modern JavaScript applications.",
-        "backgroundImage": "webpack.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "GatsbyJs",
-        "description": "Helps developers build blazing fast websites and apps.",
-        "backgroundImage": "gatsby.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "GraphQL",
-        "description": "A query language for API.",
-        "backgroundImage": "graphql.png",
-        "tags": [
-            "backend"
-        ]
-    },
-    {
-        "label": "SQL",
-        "description": "Structured Query Language for relational Databases.",
-        "backgroundImage": "sql.png",
-        "tags": [
-            "backend",
-            "fundamental",
-            "language"
-        ]
-    },
-    {
-        "label": "NoSQL",
-        "description": "ElasticSeach, Redis etc.",
-        "backgroundImage": "nosql.png",
-        "tags": [
-            "backend",
-            "language"
-        ]
-    },
-    {
-        "label": "OOP",
-        "description": "Object Oriented Language",
-        "backgroundImage": "oop.png",
-        "tags": [
-            "fundamental"
-        ]
-    },
-    {
-        "label": "CLI",
-        "description": "Command Line Interface",
-        "backgroundImage": "",
-        "tags": [
-            "fundamental",
-            "devops"
-        ]
-    },
-    {
-        "label": "GulpJs",
-        "description": "Automate and enhance frontend workflow",
-        "backgroundImage": "gulpjs.png",
-        "tags": [
-            "frontend"
-        ]
-    },
-    {
-        "label": "TypeScript",
-        "description": "A strict syntactical superset of JavaScript",
-        "backgroundImage": "typescript.png",
-        "tags": [
-            "frontend",
-            "backend"
-        ]
-    },
-    {
-        "label": "Terraform",
-        "description": "Use Infrastructure as Code to provision and manage any cloud, infrastructure, or service",
-        "backgroundImage": "terraform.png",
-        "tags": [
-            "devops",
-            "language",
-            "learning"
-        ]
-    },
-    {
-        "label": "GoLang",
-        "description": "An open source programming language that makes it easy to build simple, reliable, and efficient software.",
-        "backgroundImage": "golang.png",
-        "tags": [
-            "backend",
-            "language",
-            "learning"
-        ]
-    },
-    {
-        "label": "Unit Testing",
-        "description": "A level of software testing where individual units/ components of a software are tested.",
-        "backgroundImage": "",
-        "tags": [
-            "others"
-        ]
-    },
-    {
-        "label": "Mathematics",
-        "description": "The study of such topics as quantity (number theory), structure (algebra), space (geometry), and change (mathematical analysis)",
-        "backgroundImage": "math.png",
-        "tags": [
-            "fundamental"
-        ]
-    },
-    {
-        "label": "Git / Git Flow",
-        "description": "A free and open source distributed version control system with speed and efficiency.",
-        "backgroundImage": "git.jpg",
-        "tags": [
-            "others"
-        ]
-    },
-    {
-        "label": "Linux",
-        "description": "Linux (/ˈlɪnəks/) is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on 1991/09/17, by Linus Torvalds. Linux is typically packaged in a Linux distribution.",
-        "backgroundImage": "linux.png",
-        "tags": [
-            "devops"
-        ]
-    }
+  {
+    "label": "HTML5",
+    "backgroundImage": "html5.png",
+    "description": "Hypertext Markup Language",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "CSS3",
+    "description": "Cascading Style Sheets",
+    "backgroundImage": "css3.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "Javascript",
+    "description": "A lightweight, interpreted, or just-in-time compiled programming language with first-class functions.",
+    "backgroundImage": "js.png",
+    "tags": ["frontend", "language", "backend"]
+  },
+  {
+    "label": "Bootstrap",
+    "description": "Open source CSS toolkit",
+    "backgroundImage": "bootstrap.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "Docker",
+    "description": "Isolated development environment and help ship to production",
+    "backgroundImage": "docker.jpeg",
+    "tags": ["devops"]
+  },
+  {
+    "label": "NodeJs",
+    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "backgroundImage": "nodejs.png",
+    "tags": ["backend", "language"]
+  },
+  {
+    "label": "Functional Programming",
+    "description": "Treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.",
+    "backgroundImage": "",
+    "tags": ["others"]
+  },
+  {
+    "label": "PHP",
+    "description": "A popular general-purpose scripting language for web development.",
+    "backgroundImage": "php.png",
+    "tags": ["backend", "language"]
+  },
+  {
+    "label": "i18n",
+    "description": "developing products in such a way that they can be localized for languages and cultures easily.",
+    "backgroundImage": "i18n.png",
+    "tags": ["others"]
+  },
+  {
+    "label": "AWS",
+    "description": "Amazon Web Services",
+    "backgroundImage": "aws.png",
+    "tags": ["devops"]
+  },
+  {
+    "label": "Data Structures",
+    "description": "Containers, dictionaries, priority queues, etc.",
+    "backgroundImage": "data_structure.png",
+    "tags": ["fundamental"]
+  },
+  {
+    "label": "Algorithms",
+    "description": "Sort, search, graph, string, etc.",
+    "backgroundImage": "algorithm.png",
+    "tags": ["fundamental", "learning"]
+  },
+  {
+    "label": "React",
+    "description": "A JavaScript library for building user interfaces.",
+    "backgroundImage": "react.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "Webpack",
+    "description": "A static module bundler for modern JavaScript applications.",
+    "backgroundImage": "webpack.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "GatsbyJs",
+    "description": "Helps developers build blazing fast websites and apps.",
+    "backgroundImage": "gatsby.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "GraphQL",
+    "description": "A query language for API.",
+    "backgroundImage": "graphql.png",
+    "tags": ["backend"]
+  },
+  {
+    "label": "SQL",
+    "description": "Structured Query Language for relational Databases.",
+    "backgroundImage": "sql.png",
+    "tags": ["backend", "fundamental", "language"]
+  },
+  {
+    "label": "NoSQL",
+    "description": "ElasticSeach, Redis etc.",
+    "backgroundImage": "nosql.png",
+    "tags": ["backend", "language"]
+  },
+  {
+    "label": "OOP",
+    "description": "Object Oriented Language",
+    "backgroundImage": "oop.png",
+    "tags": ["fundamental"]
+  },
+  {
+    "label": "CLI",
+    "description": "Command Line Interface",
+    "backgroundImage": "",
+    "tags": ["fundamental", "devops"]
+  },
+  {
+    "label": "GulpJs",
+    "description": "Automate and enhance frontend workflow",
+    "backgroundImage": "gulpjs.png",
+    "tags": ["frontend"]
+  },
+  {
+    "label": "TypeScript",
+    "description": "A strict syntactical superset of JavaScript",
+    "backgroundImage": "typescript.png",
+    "tags": ["frontend", "backend"]
+  },
+  {
+    "label": "Terraform",
+    "description": "Use Infrastructure as Code to provision and manage any cloud, infrastructure, or service",
+    "backgroundImage": "terraform.png",
+    "tags": ["devops", "language", "learning"]
+  },
+  {
+    "label": "GoLang",
+    "description": "An open source programming language that makes it easy to build simple, reliable, and efficient software.",
+    "backgroundImage": "golang.png",
+    "tags": ["backend", "language", "learning"]
+  },
+  {
+    "label": "Unit Testing",
+    "description": "A level of software testing where individual units/ components of a software are tested.",
+    "backgroundImage": "",
+    "tags": ["others"]
+  },
+  {
+    "label": "Mathematics",
+    "description": "The study of such topics as quantity (number theory), structure (algebra), space (geometry), and change (mathematical analysis)",
+    "backgroundImage": "math.png",
+    "tags": ["fundamental", "learning"]
+  },
+  {
+    "label": "Git / Git Flow",
+    "description": "A free and open source distributed version control system with speed and efficiency.",
+    "backgroundImage": "git.jpg",
+    "tags": ["others"]
+  },
+  {
+    "label": "Linux",
+    "description": "Linux (/ˈlɪnəks/) is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on 1991/09/17, by Linus Torvalds. Linux is typically packaged in a Linux distribution.",
+    "backgroundImage": "linux.png",
+    "tags": ["devops"]
+  }
 ]
