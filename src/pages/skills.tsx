@@ -2,11 +2,9 @@
 import { useState } from "react"
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
-import Flippy, { FrontSide, BackSide } from "react-flippy"
 import Layout from "../components/layout/Layout"
 import SEO from "src/components/common/seo"
-import SkillImage from "src/components/common/Image"
-import Card from 'src/components/ui/Card';
+import Card from "src/components/ui/Card"
 
 interface ISkillNode {
   node: {
@@ -91,50 +89,15 @@ const SkillPage = ({ data }: IProps) => {
       return null
     }
 
-    const _frontSide = _sNode.backgroundImage ? (
-      <SkillImage
-        path={`skills/${_sNode.backgroundImage}`}
-        alt={`${_sNode.label}`}
-      />
-    ) : (
-      <h4 className="d-flex justify-content-center align-items-center text-center">
-        {`${_sNode.label.toUpperCase()}`}
-      </h4>
-    )
-
     return (
       <div className="col-xl-3 col-lg-4 col-sm-6 col-12 flipy-col">
-        <Card image={/>
-        <div style={{ display: "none" }}>
-          <Flippy
-            flipOnHover={true} // default false
-            flipOnClick={false} // default false
-            flipDirection="horizontal" // horizontal or vertical
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
-            style={{
-              width: "250px",
-              height: "250px",
-            }} /// these are optional style, it is not necessary
-          >
-            <FrontSide
-              sx={{
-                backgroundColor: `primary`,
-                color: "#fff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "1.5rem",
-              }}
-            >
-              {_frontSide}
-            </FrontSide>
-            <BackSide style={{ backgroundColor: "#ddd" }}>
-              <h5>{_sNode.label}</h5>
-              <p>{_sNode.description}</p>
-            </BackSide>
-          </Flippy>
-        </div>
+        <Card
+          imagePath={
+            _sNode.backgroundImage ? `skills/${_sNode.backgroundImage}` : ""
+          }
+          title={_sNode.label}
+          description={_sNode.description}
+        />
       </div>
     )
   })

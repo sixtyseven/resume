@@ -4,14 +4,16 @@
 $width: 250px;
 $height: 250px;
 
-.card {
+.cardContainer {
   width: $width;
   height: $height;
-  margin: 10px;
+  margin: 12px 0;
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor: default;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   .mask {
     width: $width;
@@ -20,35 +22,43 @@ $height: 250px;
     overflow: hidden;
     top: 0;
     left: 0;
-    background-color: rgba(38, 95, 142, 0.4);
-    transition: all 0.5s linear;
-    opacity: 0;
-  }
-  .title {
-    font-size: 3rem;
-    margin: 20px 40px 20px 40px;
-    transform: scale(0);
-    color: #333;
-    transition: all 0.5s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
     opacity: 0;
   }
 
-  .image {
+  .title {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  .description {
+    padding: 4px;
+  }
+
+  .mainContent {
     width: 100%;
     object-fit: contain;
-    transform: scale(0.8);
     z-index: 1;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    :global .gatsby-image-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .mainTitle {
+    font-size: 2rem;
   }
 
   &:hover {
-    .image {
-      transform: scale(5);
+    .mainContent {
       opacity: 0;
     }
-    .title {
+    .mask {
       opacity: 1;
-      transform: scale(1);
     }
   }
 }
