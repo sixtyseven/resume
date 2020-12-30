@@ -6,6 +6,7 @@ import Flippy, { FrontSide, BackSide } from "react-flippy"
 import Layout from "../components/layout/Layout"
 import SEO from "src/components/common/seo"
 import SkillImage from "src/components/common/Image"
+import Card from 'src/components/ui/Card';
 
 interface ISkillNode {
   node: {
@@ -29,9 +30,9 @@ const SkillPage = ({ data }: IProps) => {
   const skills = data.allSkillsJson.edges
   const tags: string[] = []
 
-  skills.map(skillNode => {
+  skills.map((skillNode) => {
     const _skillTags = skillNode.node.tags
-    _skillTags.forEach(_t => {
+    _skillTags.forEach((_t) => {
       if (!tags.includes(_t)) {
         tags.push(_t)
       }
@@ -39,13 +40,13 @@ const SkillPage = ({ data }: IProps) => {
   })
 
   const initSelectedTagsState: { [key: string]: boolean } = {}
-  tags.forEach(_t => {
+  tags.forEach((_t) => {
     initSelectedTagsState[_t] = true
   })
 
   const [selectedTags, setSelectedTags] = useState(initSelectedTagsState)
 
-  const tagItems = tags.map(_t => {
+  const tagItems = tags.map((_t) => {
     return (
       <div className="tag-span form-check">
         <input
@@ -73,14 +74,14 @@ const SkillPage = ({ data }: IProps) => {
     )
   })
 
-  const skillItems = skills.map(skillNode => {
+  const skillItems = skills.map((skillNode) => {
     const _sNode = skillNode.node
 
     const _tags = _sNode.tags
 
     let _isShown = false
 
-    _tags.forEach(_t => {
+    _tags.forEach((_t) => {
       if (selectedTags[_t]) {
         _isShown = true
       }
@@ -103,34 +104,37 @@ const SkillPage = ({ data }: IProps) => {
 
     return (
       <div className="col-xl-3 col-lg-4 col-sm-6 col-12 flipy-col">
-        <Flippy
-          flipOnHover={true} // default false
-          flipOnClick={false} // default false
-          flipDirection="horizontal" // horizontal or vertical
-          // if you pass isFlipped prop component will be controlled component.
-          // and other props, which will go to div
-          style={{
-            width: "250px",
-            height: "250px",
-          }} /// these are optional style, it is not necessary
-        >
-          <FrontSide
-            sx={{
-              backgroundColor: `primary`,
-              color: "#fff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "1.5rem",
-            }}
+        <Card image={/>
+        <div style={{ display: "none" }}>
+          <Flippy
+            flipOnHover={true} // default false
+            flipOnClick={false} // default false
+            flipDirection="horizontal" // horizontal or vertical
+            // if you pass isFlipped prop component will be controlled component.
+            // and other props, which will go to div
+            style={{
+              width: "250px",
+              height: "250px",
+            }} /// these are optional style, it is not necessary
           >
-            {_frontSide}
-          </FrontSide>
-          <BackSide style={{ backgroundColor: "#ddd" }}>
-            <h5>{_sNode.label}</h5>
-            <p>{_sNode.description}</p>
-          </BackSide>
-        </Flippy>
+            <FrontSide
+              sx={{
+                backgroundColor: `primary`,
+                color: "#fff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.5rem",
+              }}
+            >
+              {_frontSide}
+            </FrontSide>
+            <BackSide style={{ backgroundColor: "#ddd" }}>
+              <h5>{_sNode.label}</h5>
+              <p>{_sNode.description}</p>
+            </BackSide>
+          </Flippy>
+        </div>
       </div>
     )
   })
